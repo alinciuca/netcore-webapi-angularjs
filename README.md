@@ -9,6 +9,8 @@ A template repository with:
 - boostrap
 - webpack
 
+This template uses yarn for js packages.
+
 Please check package.json for the versions of the packages used in this template.
 
 Hack away!

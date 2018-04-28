@@ -5,9 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="webpack-config\" />
-    <Folder Include="wwwroot\css\" />
-    <Folder Include="wwwroot\dist\" />
+    <None Remove="webpack-config\app-entry.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="webpack-config\app-entry.js" />
   </ItemGroup>
 
   <ItemGroup>

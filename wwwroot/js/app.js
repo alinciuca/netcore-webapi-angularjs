@@ -3,7 +3,6 @@
 
     angular.module('app', [
         // Angular modules 
-        'ngRoute',
         'restangular'
 
         // Custom modules 

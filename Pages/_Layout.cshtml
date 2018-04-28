@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="app" data-ng-strict-di>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - webapp</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/app.css" />
+    </environment>
+    <environment include="Production">
+        <script src="/dist/assetsDeps.bundle.js" asp-append-version="true"></script>
+        <script src="/dist/customAssets.bundle.js" asp-append-version="true"></script>
+    </environment>
+</head>
+<body>
+    <div class="container">
+        @RenderBody()
+        <hr />
+    </div>
+
+    <environment include="Development">
+        <script src="/vendor/jquery/dist/jquery.js"></script>
+        <script src="/vendor/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/vendor/angular/angular.js"></script>
+
+        <script src="/vendor/lodash/lodash.js"></script>
+        <script src="/vendor/restangular/dist/restangular.js"></script>
+
+        <script src="~/js/app.js" asp-append-version="true"></script>
+    </environment>
+
+    <environment include="Production">
+        <script src="/dist/angular.bundle.js" asp-append-version="true"></script>
+        <script src="/dist/lodash.bundle.js" asp-append-version="true"></script>
+        <script src="/dist/restangular.bundle.js" asp-append-version="true"></script>
+        <script src="/dist/applicationEntry.bundle.js" asp-append-version="true"></script>
+    </environment>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

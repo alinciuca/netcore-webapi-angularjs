@@ -1,2 +1,14 @@
 # netcore-webapi-angularjs
-Base repo that links webapi core to angularjs and uses yarn as a package manager
+A template repository with:
+- dotnetcore webapi
+- swagger for api documentation
+- angularjs
+- restangular
+- jQuery
+- lodash
+- boostrap
+- webpack
+
+Please check package.json for the versions of the packages used in this template.
+
+Hack away!

@@ -1,2 +1,2 @@
 # netcore-webapi-angularjs
-Base repo that links webapi core to angularjs and using yarn as a package manager
+Base repo that links webapi core to angularjs and uses yarn as a package manager

@@ -1,0 +1,1 @@
+﻿require("../wwwroot/js/app");
